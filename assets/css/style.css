@@ -1,0 +1,75 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans Japanese', sans-serif; }
+
+/*
+  properties
+*/
+.v-middle {
+  vertical-align: middle; }
+
+/*
+  content wrapper
+*/
+.content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.content-wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; }
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px; }
+
+  .content-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+  .content-body {
+    width: 768px; } }
+@media screen and (min-width: 992px) {
+  .container {
+    width: 992px; }
+
+  .content-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+  .content-body {
+    width: 992px; } }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px; }
+
+  .content-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+  .content-body {
+    width: 1200px; } }
+/*
+ content-aside
+*/
+.categories {
+  column-count: 2;
+  column-gap: 0px; }
+
+.category {
+  break-inside: avoid-column; }
+
+.image_col img {
+  max-width: 100%; }
+
+.image_col {
+  column-count: 3; }
