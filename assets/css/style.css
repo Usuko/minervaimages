@@ -68,6 +68,34 @@ body {
 .category {
   break-inside: avoid-column; }
 
+.effect img {
+  max-width: 100%; }
+
+.effect li {
+  position: relative; }
+
+.effect .caption {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1400ms ease; }
+
+.caption span {
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  font-size: 3em;
+  transition: all 1400ms ease; }
+
+.effect .caption:hover {
+  opacity: 0.5;
+  background-color: white; }
+
+.effect .caption:hover span {
+  transform: translate(0, -110%); }
+
 .image_col img {
   max-width: 100%; }
 
